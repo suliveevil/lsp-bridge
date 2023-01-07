@@ -4,7 +4,7 @@
   "command": ["$HOME/.cargo/bin/ds-pinyin-lsp"],
   "settings": {},
   "initializationOptions": {
-    "db_path": "$HOME/.emacs.d/ds-pinyin/dict.db3",
+    "db_path": "$HOME/.config/emacs/ds-pinyin/dict.db3",
     "completion_on": true,
     "show_symbols": true,
     "show_symbols_only_follow_by_hanzi": false,
