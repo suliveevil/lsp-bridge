@@ -88,7 +88,7 @@ It should be noted that there are three scan modes of lsp-bridge:
 * `lsp-bridge-diagnostic-list`: List all diagnostic information
 * `lsp-bridge-diagnostic-copy`: Copy the current diagnostic information to the clipboard
 * `lsp-bridge-diagnostic-ignore`: Insert comment to ignore the current diagnosis
-* `lsp-bridge-code-action`: Popup code action menu
+* `lsp-bridge-code-action`: Popup code action menu, you can pass special `actin-kind` to fix, `action-kind` can use one of "quickfix", "refactor", "refactor.extract", "refactor.inline", "refactor.rewrite", "source", "source.organizeImports", "source.fixAll"
 * `lsp-bridge-workspace-list-symbols`: List all symbols in workspace and jump to the symbol definition
 * `lsp-bridge-signature-help-fetch`: show signature help in minibuffer manually (move cursor to parameters area will show signature help automatically)
 * `lsp-bridge-popup-complete-menu`: Manually popup the completion menu, you only need this command when turn on option `lsp-bride-complete-manually`
@@ -320,6 +320,8 @@ Generally, `lsp-bridge-example-record` is defined in this way. After receiving `
 6. Show performance bottlenecks: snakeviz ~/lsp-bridge.prof
 
 ## Report bug
+
+For some common problems, please read [Wiki](https://github.com/manateelazycat/lsp-bridge/wiki) first.
 
 Please use `emacs -q` and load a minimal setup with only lsp-bridge to verify that the bug is reproducible. If `emacs -q` works fine, probably something is wrong with your Emacs config.
 
